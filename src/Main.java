@@ -3,23 +3,24 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) {
-//        TestSuite1.test1();
-//        TestSuite1.test2();
-//        TestSuite1.test3();
-//        TestSuite1.test4();
-//        TestSuite1.test5();
-//        TestSuite1.test6();
-//        TestSuite1.test7();
-//
-//
-//        TestSuite2.test1();
-//        TestSuite2.test2();
-//        TestSuite2.test3();
-//        TestSuite2.test4();
-//        TestSuite2.test5();
-//        TestSuite2.test6();
-//        TestSuite2.test7();
-//        TestSuite2.test8();
+
+        TestSuite1.test1();
+        TestSuite1.test2();
+        TestSuite1.test3();
+        TestSuite1.test4();
+        TestSuite1.test5();
+        TestSuite1.test6();
+        TestSuite1.test7();
+
+
+        TestSuite2.test1();
+        TestSuite2.test2();
+        TestSuite2.test3();
+        TestSuite2.test4();
+        TestSuite2.test5();
+        TestSuite2.test6();
+        TestSuite2.test7();
+        TestSuite2.test8();
 
         TestSuite3.test1();
         TestSuite3.test2();
@@ -30,6 +31,16 @@ public class Main {
         TestSuite3.test7();
         TestSuite3.test8();
         TestSuite3.test9();
+
+        TestSuite4.test1();
+        TestSuite4.test2();
+        TestSuite4.test3();
+        TestSuite4.test4();
+        TestSuite4.test5();
+        TestSuite4.test6();
+        TestSuite4.test7();
+        TestSuite4.test8();
+
     }
 
 
