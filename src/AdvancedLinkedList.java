@@ -1,5 +1,5 @@
 public class AdvancedLinkedList {
-    private Object data;
+    private TestObject[] data;
     private AdvancedLinkedList next;
     public AdvancedLinkedList(){
         int numOfObject = (int)(Math.random() * 5 + 1);
@@ -11,11 +11,11 @@ public class AdvancedLinkedList {
         this.data = arr;
         this.next = null;
     }
-    public AdvancedLinkedList(Object data, AdvancedLinkedList next){
+    public AdvancedLinkedList(TestObject[] data, AdvancedLinkedList next){
         this.data = data;
         this.next = next;
     }
-    public AdvancedLinkedList(Object data){
+    public AdvancedLinkedList(TestObject[] data){
         this.data = data;
         this.next = null;
     }
@@ -24,7 +24,7 @@ public class AdvancedLinkedList {
         return data;
     }
 
-    public void setData(Object data) {
+    public void setData(TestObject[] data) {
         this.data = data;
     }
 
