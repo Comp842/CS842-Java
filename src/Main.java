@@ -1,3 +1,4 @@
+import java.util.TreeSet;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,6 +40,16 @@ public class Main {
         TestSuite4.test7();
         TestSuite4.test8();
 
+        TestSuite5.test1();
+        TestSuite5.test2();
+        TestSuite5.test3();
+        TestSuite5.test4();
+        TestSuite5.test5();
+        TestSuite5.test6();
+        TestSuite5.test7();
+        TestSuite5.test8();
+        TestSuite5.test9();
+        TestSuite5.test10();
     }
 
 
