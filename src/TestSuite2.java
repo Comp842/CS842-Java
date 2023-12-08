@@ -2,11 +2,10 @@ public class TestSuite2 {
 
     private static int numAssignments = 10000000;
     public static void test1(){
-//        Runtime gfg = Runtime.getRuntime();
-//        for (int j = 0; j < 200; j++)
-//        {
+        Runtime gfg = Runtime.getRuntime();
+        for (int j = 0; j < 200; j++) {
 
-//            System.out.println(gfg.freeMemory());
+            System.out.println(gfg.maxMemory() - gfg.freeMemory());
             int value;
 
             // Start the timer
@@ -16,14 +15,14 @@ public class TestSuite2 {
             for (int i = 0; i < numAssignments; i++) {
                 value = i;
             }
-//            System.out.println(gfg.freeMemory());
+            System.out.println(gfg.maxMemory() - gfg.freeMemory());
+        }
 
             // Stop the timer and calculate the elapsed time
             double elapsedMillis = Timer.getTimeSeconds();
-
             // Print the results
             System.out.println("Time taken for " + numAssignments + " int assignments: " + elapsedMillis + " seconds");
-//        }
+
 
     }
 

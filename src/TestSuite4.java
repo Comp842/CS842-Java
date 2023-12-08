@@ -170,10 +170,10 @@ public class TestSuite4 {
 
         AdvancedLinkedList firstElem;
         AdvancedLinkedList currElem;
-//        Runtime gfg = Runtime.getRuntime();
+        Runtime gfg = Runtime.getRuntime();
 
         for(int i = 0; i<numLoops; i++){
-//            System.out.println(gfg.freeMemory());
+            System.out.println(gfg.maxMemory()-gfg.freeMemory());
             firstElem = new AdvancedLinkedList();
             currElem = firstElem;
             for(int j = 0; j<numObjects; j++){
@@ -181,7 +181,7 @@ public class TestSuite4 {
                 currElem.setNext(nextElem);
                 currElem = nextElem;
             }
-//            System.out.println(gfg.freeMemory());
+            System.out.println(gfg.maxMemory()-gfg.freeMemory());
         }
 
         // Stop the timer and calculate the elapsed time
