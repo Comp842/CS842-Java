@@ -170,8 +170,9 @@ public class TestSuite3 {
 
         SimpleLinkedList firstElem;
         SimpleLinkedList currElem;
-
+        Runtime gfg = Runtime.getRuntime();
         for(int i = 0; i<numLoops; i++){
+            System.out.println(gfg.freeMemory());
             firstElem = new SimpleLinkedList();
             currElem = firstElem;
             for(int j = 0; j<numObjects; j++){
@@ -179,6 +180,7 @@ public class TestSuite3 {
                 currElem.setNext(nextElem);
                 currElem = nextElem;
             }
+            System.out.println(gfg.freeMemory());
         }
 
         // Stop the timer and calculate the elapsed time

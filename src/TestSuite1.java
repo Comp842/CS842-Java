@@ -139,7 +139,9 @@ public class TestSuite1 {
         int numObjects = 10000000;
         int numLoops = 100;
 
+//        Runtime gfg = Runtime.getRuntime();
         for(int i = 0; i<numLoops; i++){
+//            System.out.println(gfg.freeMemory());
             TestObject[] arrOfTestObj = new TestObject[numObjects];
 
             // Create and discard short-lived objects (young generation)
@@ -148,6 +150,7 @@ public class TestSuite1 {
 
             }
             arrOfTestObj = null;
+//            System.out.println(gfg.freeMemory());
         }
 
         // Stop the timer and calculate the elapsed time
