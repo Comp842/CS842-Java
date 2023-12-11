@@ -149,15 +149,15 @@ public class TestSuite5 {
         int numObjects = 10000000;
         int numLoops = 100;
 
-        Runtime gfg = Runtime.getRuntime();
+//        Runtime gfg = Runtime.getRuntime();
 
         for(int i = 0; i<numLoops; i++){
-            System.out.println(gfg.maxMemory()-gfg.freeMemory());
+//            System.out.println(gfg.maxMemory()-gfg.freeMemory());
             TreeSet<Integer> ts = new TreeSet<>();
             for(int j = 0; j<numObjects; j++){
                 ts.add(i);
             }
-            System.out.println(gfg.maxMemory()-gfg.freeMemory());
+//            System.out.println(gfg.maxMemory()-gfg.freeMemory());
         }
 
         // Stop the timer and calculate the elapsed time
